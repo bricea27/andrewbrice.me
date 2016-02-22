@@ -1,9 +1,9 @@
 $(document).on("click", ".show-more", function(){
   if ($(".bio").is(":visible")) {
-    $(this).html("<i class='fa fa-bars'></i>");
     $(".bio").fadeOut();
     setTimeout(function(){
       $(".inner-wrap").removeClass("transformed");
+      $(".show-more").html("<i class='fa fa-bars'></i>");
     }, 500);
   } else {
     $(this).html("<i class='fa fa-times'></i>");
@@ -16,8 +16,13 @@ $(document).on("click", ".show-more", function(){
 
 $(document).on("keydown", "body", function(e){
   if (e.keyCode == 27) {
-    $(".bio").fadeOut();
-    $(".show-more").html("<i class='fa fa-bars'></i>");
+    if ($(".bio").is(":visible")) {
+      $(".bio").fadeOut();
+      setTimeout(function(){
+        $(".inner-wrap").removeClass("transformed");
+        $(".show-more").html("<i class='fa fa-bars'></i>");
+      }, 500);
+    }
   }
 });
 
@@ -32,7 +37,7 @@ particlesJS("particles-js", {
       }
     },
     "color": {
-      "value": "#98a4b1"
+      "value": "#444"
     },
     "shape": {
       "type": "circle",
