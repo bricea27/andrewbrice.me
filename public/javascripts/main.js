@@ -2,9 +2,15 @@ $(document).on("click", ".show-more", function(){
   if ($(".bio").is(":visible")) {
     $(this).html("<i class='fa fa-bars'></i>");
     $(".bio").fadeOut();
+    setTimeout(function(){
+      $(".inner-wrap").removeClass("transformed");
+    }, 500);
   } else {
     $(this).html("<i class='fa fa-times'></i>");
-    $(".bio").fadeIn();
+    $(".inner-wrap").addClass("transformed");
+    setTimeout(function(){
+      $(".bio").fadeIn();
+    }, 500);
   }
 });
 
