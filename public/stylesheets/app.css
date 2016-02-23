@@ -71,10 +71,10 @@ body {
     transition: all 0.2s ease;
   }*/ }
   .show-more i {
-    color: #666;
+    color: #999;
     transition: all 0.2s ease; }
   .show-more i.fa-times {
-    color: #666; }
+    color: #999; }
   .show-more:hover i {
     color: white;
     -webkit-transform: scale(1.25);
@@ -99,6 +99,8 @@ body {
     position: absolute;
     width: 100%;
     height: 100%; }
+    .inner-wrap #particles-js:hover {
+      cursor: pointer; }
   .inner-wrap header {
     text-align: center;
     position: absolute;
@@ -115,7 +117,7 @@ body {
       margin-bottom: 0.5rem; }
     .inner-wrap header h2 {
       color: #666;
-      font-weight: 300;
+      font-weight: 700;
       font-size: calc(16px + 2vw);
       overflow: hidden;
       position: relative;
@@ -179,7 +181,7 @@ ul {
     transition: all 0.2s ease; }
     ul li a {
       width: 100%;
-      color: #666;
+      color: #999;
       position: relative;
       display: inline-block;
       text-decoration: none;
@@ -233,7 +235,7 @@ ul {
       max-width: 200px;
       margin: 0 auto;
       margin-bottom: 2rem;
-      border: 6px solid #111;
+      border: 6px solid #333;
       -webkit-border-radius: 100%;
       -moz-border-radius: 100%;
       border-radius: 100%; }
