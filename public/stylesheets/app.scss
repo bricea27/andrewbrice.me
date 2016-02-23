@@ -58,6 +58,15 @@ html, body {
 body {
   overflow: hidden;
   font-family: 'Open Sans', "Helvetica", sans-serif;
+	transition: all 0.5s ease;
+
+	// &.translated {
+	// 	-webkit-transform: translateX(-100%);
+	// 	-moz-transform: translateX(-100%);
+	// 	transform: translateX(-100%);
+	// 	transition: all 0.5s ease;
+	// }
+
 }
 
 .show-more {
@@ -224,6 +233,7 @@ ul {
       color: #666;
       position: relative;
       display: inline-block;
+			text-decoration: none;
       -webkit-transition: -webkit-transform 0.3s;
       -moz-transition: -moz-transform 0.3s;
       transition: all 0.2s ease;
@@ -247,6 +257,10 @@ ul {
       transform: translateY(-120%);
       transition: all 0.2s ease;
     }
+
+		.fa {
+			font-size: calc(16px + 1vw);
+		}
 
   }
 

@@ -53,7 +53,8 @@ html, body {
 
 body {
   overflow: hidden;
-  font-family: 'Open Sans', "Helvetica", sans-serif; }
+  font-family: 'Open Sans', "Helvetica", sans-serif;
+  transition: all 0.5s ease; }
 
 .show-more {
   position: fixed;
@@ -181,6 +182,7 @@ ul {
       color: #666;
       position: relative;
       display: inline-block;
+      text-decoration: none;
       -webkit-transition: -webkit-transform 0.3s;
       -moz-transition: -moz-transform 0.3s;
       transition: all 0.2s ease; }
@@ -199,6 +201,8 @@ ul {
       color: white;
       transform: translateY(-120%);
       transition: all 0.2s ease; }
+    ul li .fa {
+      font-size: calc(16px + 1vw); }
 
 .bio {
   width: 100%;

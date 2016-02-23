@@ -26,6 +26,18 @@ $(document).on("keydown", "body", function(e){
   }
 });
 
+// $(document).on("mouseenter", "header", function(){
+//   var title = titleGenerator();
+//   console.log(title);
+//   $("h2 span").attr("data-hover", title);
+// });
+//
+// function titleGenerator() {
+//   var titles = ['Designer', 'Creative Thinker', 'Hiker', 'Camper', 'Athlete', 'Bourbon Slinger', 'Movie Quoter'];
+//   var i = Math.floor(Math.random() * titles.length);
+//   return titles[i];
+// }
+
 //particles.js - http://vincentgarreau.com/particles.js
 particlesJS("particles-js", {
   "particles": {
