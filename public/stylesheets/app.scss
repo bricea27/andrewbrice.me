@@ -313,7 +313,9 @@ ul {
 	      left: 0;
 	      width: 100%;
 	      text-align: center;
-	      content: attr(data-hover);
+	      //content: attr(data-hover);
+				font-family: FontAwesome;
+				content: "\f003\ Fire Away";
 	      font-weight: 700;
 	      -webkit-transform: translate3d(0,0,0);
 	      -moz-transform: translate3d(0,0,0);
