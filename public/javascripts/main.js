@@ -3,7 +3,7 @@ $(document).on("click", ".show-more", function(){
     $(".bio").fadeOut();
     setTimeout(function(){
       $(".inner-wrap").removeClass("transformed");
-      $(".show-more").html("<i class='fa fa-bars'></i>");
+      $(".show-more").html("<i class='fa fa-user-circle'></i>");
     }, 500);
   } else {
     $(this).html("<i class='fa fa-times'></i>");
@@ -20,7 +20,7 @@ $(document).on("keydown", "body", function(e){
       $(".bio").fadeOut();
       setTimeout(function(){
         $(".inner-wrap").removeClass("transformed");
-        $(".show-more").html("<i class='fa fa-bars'></i>");
+        $(".show-more").html("<i class='fa fa-user-circle'></i>");
       }, 500);
     }
   }

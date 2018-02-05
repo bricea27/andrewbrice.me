@@ -374,6 +374,13 @@ ul {
   }
 }
 
+//Media Queries
+@media only screen and (max-width : 620px) {
+	.bio p img {
+		max-width: 120px;
+	}
+}
+
 @mixin transition($transition) {
   -webkit-transition: $transition 2s ease;
   -moz-transition: $transition 2s ease;

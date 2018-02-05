@@ -286,6 +286,9 @@ ul {
     color: #444;
     transition: all 0.2s ease; }
 
+@media only screen and (max-width: 620px) {
+  .bio p img {
+    max-width: 120px; } }
 @-webkit-keyframes fadeInLeft {
   from {
     opacity: 0;
