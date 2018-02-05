@@ -60,7 +60,9 @@ body {
   position: fixed;
   top: 2rem;
   right: 2rem;
-  font-size: calc(16px + 0.5vw);
+  font-size: -webkit-calc(16px + 1vw);
+  font-size: -moz-calc(16px + 1vw);
+  font-size: calc(16px + 1vw);
   z-index: 9999;
   transition: all 0.2s ease;
   /*&:hover i.fa-times {
@@ -113,11 +115,15 @@ body {
     .inner-wrap header h1 {
       color: #ededed;
       font-weight: 700;
+      font-size: -webkit-calc(16px + 3vw);
+      font-size: -moz-calc(16px + 3vw);
       font-size: calc(16px + 3vw);
       margin-bottom: 0.5rem; }
     .inner-wrap header h2 {
       color: #666;
       font-weight: 700;
+      font-size: -webkit-calc(16px + 2vw);
+      font-size: -moz-calc(16px + 2vw);
       font-size: calc(16px + 2vw);
       overflow: hidden;
       position: relative;
@@ -177,6 +183,8 @@ ul {
     position: relative;
     display: inline-block;
     line-height: 1.4em;
+    font-size: -webkit-calc(16px + 0.5vw);
+    font-size: -moz-calc(16px + 0.5vw);
     font-size: calc(16px + 0.5vw);
     transition: all 0.2s ease; }
     ul li a {
@@ -204,6 +212,8 @@ ul {
       transform: translateY(-120%);
       transition: all 0.2s ease; }
     ul li .fa {
+      font-size: -webkit-calc(16px + 1vw);
+      font-size: -moz-calc(16px + 1vw);
       font-size: calc(16px + 1vw); }
 
 .bio {
@@ -215,6 +225,8 @@ ul {
   background: #222;
   overflow: hidden;
   padding: 0;
+  font-size: -webkit-calc(16px + 1.5vw);
+  font-size: -moz-calc(16px + 1.5vw);
   font-size: calc(16px + 1.5vw);
   line-height: 1.4em;
   text-align: center;
@@ -250,6 +262,8 @@ ul {
       left: 50%;
       bottom: 1rem;
       transform: translate(-50%, -50%);
+      font-size: -webkit-calc(16px + 0.5vw);
+      font-size: -moz-calc(16px + 0.5vw);
       font-size: calc(16px + 0.5vw);
       overflow: hidden;
       display: block;
@@ -288,7 +302,22 @@ ul {
 
 @media only screen and (max-width: 620px) {
   .bio p img {
-    max-width: 120px; } }
+    max-width: 120px; }
+
+  .show-more {
+    font-size: -webkit-calc(16px + 1.5vw);
+    font-size: -moz-calc(16px + 1.5vw);
+    font-size: calc(16px + 1.5vw); }
+
+  ul li .fa {
+    font-size: -webkit-calc(16px + 2vw);
+    font-size: -moz-calc(16px + 2vw);
+    font-size: calc(16px + 2vw); } }
+@media only screen and (max-width: 480px) {
+  .bio {
+    font-size: -webkit-calc(16px + 1vw);
+    font-size: -moz-calc(16px + 1vw);
+    font-size: calc(16px + 1vw); } }
 @-webkit-keyframes fadeInLeft {
   from {
     opacity: 0;

@@ -73,7 +73,9 @@ body {
   position: fixed;
   top: 2rem;
   right: 2rem;
-  font-size: calc(16px + 0.5vw);
+  font-size: -webkit-calc(16px + 1vw);
+	font-size: -moz-calc(16px + 1vw);
+	font-size: calc(16px + 1vw);
   z-index: 9999;
   transition: all 0.2s ease;
 
@@ -147,6 +149,8 @@ body {
     h1 {
       color: #ededed;
       font-weight: 700;
+			font-size: -webkit-calc(16px + 3vw);
+			font-size: -moz-calc(16px + 3vw);
       font-size: calc(16px + 3vw);
       margin-bottom: 0.5rem;
     }
@@ -154,6 +158,8 @@ body {
     h2 {
       color: #666;
       font-weight: 700;
+			font-size: -webkit-calc(16px + 2vw);
+			font-size: -moz-calc(16px + 2vw);
       font-size: calc(16px + 2vw);
       overflow: hidden;
       position: relative;
@@ -230,7 +236,9 @@ ul {
     position: relative;
     display: inline-block;
     line-height: 1.4em;
-    font-size: calc(16px + 0.5vw);
+    font-size: -webkit-calc(16px + 0.5vw);
+		font-size: -moz-calc(16px + 0.5vw);
+		font-size: calc(16px + 0.5vw);
     transition: all 0.2s ease;
 
     a {
@@ -264,6 +272,8 @@ ul {
     }
 
 		.fa {
+			font-size: -webkit-calc(16px + 1vw);
+			font-size: -moz-calc(16px + 1vw);
 			font-size: calc(16px + 1vw);
 		}
 
@@ -280,7 +290,9 @@ ul {
   background: #222;
   overflow: hidden;
   padding: 0;
-  font-size: calc(16px + 1.5vw);
+  font-size: -webkit-calc(16px + 1.5vw);
+	font-size: -moz-calc(16px + 1.5vw);
+	font-size: calc(16px + 1.5vw);
   line-height: 1.4em;
   text-align: center;
   z-index: 99;
@@ -321,7 +333,9 @@ ul {
 	    left: 50%;
 			bottom: 1rem;
 	    transform: translate(-50%, -50%);
-      font-size: calc(16px + 0.5vw);
+      font-size: -webkit-calc(16px + 0.5vw);
+			font-size: -moz-calc(16px + 0.5vw);
+			font-size: calc(16px + 0.5vw);
 			overflow: hidden;
 	    display: block;
 	    line-height: 1.4em;
@@ -376,8 +390,36 @@ ul {
 
 //Media Queries
 @media only screen and (max-width : 620px) {
-	.bio p img {
-		max-width: 120px;
+	.bio {
+		p {
+			img {
+				max-width: 120px;
+			}
+		}
+	}
+
+	.show-more {
+	  font-size: -webkit-calc(16px + 1.5vw);
+		font-size: -moz-calc(16px + 1.5vw);
+		font-size: calc(16px + 1.5vw);
+	}
+
+	ul {
+		li {
+			.fa {
+				font-size: -webkit-calc(16px + 2vw);
+				font-size: -moz-calc(16px + 2vw);
+				font-size: calc(16px + 2vw);
+			}
+		}
+	}
+}
+
+@media only screen and (max-width : 480px) {
+	.bio {
+		font-size: -webkit-calc(16px + 1vw);
+		font-size: -moz-calc(16px + 1vw);
+		font-size: calc(16px + 1vw);
 	}
 }
 
